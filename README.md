@@ -1,5 +1,5 @@
 # Today I Learned(TIL) Wiki
 
-## SupaBase
-  * [test](https://github.com/suntheblock/TIL/blob/main/supabase/test1)
+## JavaScript
+  * [What is JavaScript?](https://github.com/suntheblock/TIL/blob/main/JavaScript/What%20Is%20JavaScript%3F)
 
