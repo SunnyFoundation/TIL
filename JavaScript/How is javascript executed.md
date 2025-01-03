@@ -1,3 +1,7 @@
+## How is javascript executed
+
+
+
 <img width="1140" alt="스크린샷 2025-01-03 오후 8 02 31" src="https://github.com/user-attachments/assets/146fc627-4595-4fda-9235-2709f7180440" />
 
 
