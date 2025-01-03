@@ -1,3 +1,6 @@
+## what is javascript?
+
+
 JavaScript is just a cool Programing Language 
 
 If html , css  just show you boring web site  like a book 
