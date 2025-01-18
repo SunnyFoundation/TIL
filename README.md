@@ -6,5 +6,21 @@
   * [let vs const](https://github.com/suntheblock/TIL/blob/main/JavaScript/let%20vs%20const.md)
   * [dataType](https://github.com/suntheblock/TIL/blob/main/JavaScript/dataType.md)
   * [TypeCasting](https://github.com/suntheblock/TIL/blob/main/JavaScript/TypeCasting.md)
+  * [Operators](https://github.com/suntheblock/TIL/blob/main/JavaScript/Operator.md)
+  * [Switch Statement](https://github.com/suntheblock/TIL/blob/main/JavaScript/Switch%20Statement.md)
+  * [Conditional Statement](https://github.com/suntheblock/TIL/blob/main/JavaScript/Conditional%20Statement.md)
+  * [Loop](https://github.com/suntheblock/TIL/blob/main/JavaScript/loop.md)
+  * [Functions](https://github.com/suntheblock/TIL/blob/main/JavaScript/function.md)
+  * [Callback Functions](https://github.com/suntheblock/TIL/blob/main/JavaScript/call%20back%20function%20.md)
+  * [Arrow Functions](https://github.com/suntheblock/TIL/blob/main/JavaScript/Arrow%20function%20.md)
+  * [Scope](https://github.com/suntheblock/TIL/blob/main/JavaScript/Scope.md)
+  * [Objects](https://github.com/suntheblock/TIL/blob/main/JavaScript/objects.md)
+  * [Arrays](https://github.com/suntheblock/TIL/blob/main/JavaScript/Array.md)
+
+
+
+
+
+
     
 
