@@ -30,4 +30,3 @@
 
     
 
-https://github.com/suntheblock/TIL/blob/main/JavaScript/Speard%20%2C%20Rest%20syntax.md
