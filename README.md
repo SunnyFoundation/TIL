@@ -18,6 +18,8 @@
   * [Arrays](https://github.com/suntheblock/TIL/blob/main/JavaScript/Array.md)
   * [Truthy and Falsy](https://github.com/suntheblock/TIL/blob/main/JavaScript/Truthy%20and%20Falsy.md)
   * [Short-circuit Evaluation](https://github.com/suntheblock/TIL/blob/main/JavaScript/Short-circuit%20Evaluation.md)
+  * [Speard,Rest syntax ](https://github.com/suntheblock/TIL/blob/main/JavaScript/Speard%20%2C%20Rest%20syntax.md)
+
 
 
 
@@ -28,3 +30,4 @@
 
     
 
+https://github.com/suntheblock/TIL/blob/main/JavaScript/Speard%20%2C%20Rest%20syntax.md
