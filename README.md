@@ -16,6 +16,8 @@
   * [Scope](https://github.com/suntheblock/TIL/blob/main/JavaScript/Scope.md)
   * [Objects](https://github.com/suntheblock/TIL/blob/main/JavaScript/objects.md)
   * [Arrays](https://github.com/suntheblock/TIL/blob/main/JavaScript/Array.md)
+  * [Truthy and Falsy](https://github.com/suntheblock/TIL/blob/main/JavaScript/Truthy%20%26%20%20Falsy.md)
+
 
 
 
