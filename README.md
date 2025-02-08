@@ -20,6 +20,10 @@
   * [Short-circuit Evaluation](https://github.com/suntheblock/TIL/blob/main/JavaScript/Short-circuit%20Evaluation.md)
   * [Speard,Rest syntax](https://github.com/suntheblock/TIL/blob/main/JavaScript/Speard%20%2C%20Rest%20syntax.md)
   * [Synchronous vs Asynchronous](https://github.com/suntheblock/TIL/blob/main/JavaScript/Synchronous%20%26%20Asynchronous.md)
+  * [Promise](https://github.com/suntheblock/TIL/blob/main/JavaScript/Promise.md
+)
+
+
 
 
 
