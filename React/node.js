@@ -1,9 +1,35 @@
-## What is node.js?
- Anywhere Everywhere You can run javascript    so node.js is javascript run time environment
 
 
- ## What is Package.json It is Menuscript of Project< Role >* List of framework , Library* command of script ex) npm start, npm test\
-   
+## What is Node.js?
 
-## What is node_modulesLibrary ,Framework actually installed < Role >* If you run npm install -> node.js installed package.json* If you typing require , import -> node.js refer to node_modules* node_modules file Don't upload Github Because It is to heavy file## What is Package - lock.jsonAccurate virsion of Library of Framework< Role >* It is prevent to virsion crash
-0 commit commentsComments0 (0)Lock conversation
+- **Node.js** is a JavaScript runtime environment.  
+- It allows you to run JavaScript **anywhere and everywhere**.
+
+---
+
+## What is `package.json`?
+
+- Acts as the **manifest** or "menu" of your project.  
+- Main roles:  
+  - Lists the **frameworks and libraries** your project depends on.  
+  - Defines common scripts/commands like `npm start`, `npm test`.
+
+---
+
+## What is `node_modules`?
+
+- A folder where all the **installed libraries and frameworks** are stored.  
+- Roles:  
+  - When you run `npm install`, it installs packages listed in `package.json` here.  
+  - When you use `require` or `import` in your code, Node.js looks for modules in this folder.  
+- **Important:** Usually not uploaded to GitHub due to its large size.
+
+---
+
+## What is `package-lock.json`?
+
+- A file that records the **exact versions** of installed libraries.  
+- Role:  
+  - Prevents version conflicts and ensures a consistent environment across installs.
+
+---
