@@ -10,6 +10,13 @@ so if you reuse this function any file you want
 you can just use component that was so easy and useful 
 
 
+`virtual Dom`
+In React When site has been changed the part of changed thing 
+don't touch real dom intead of touch virtual dom and then 
+finally update real dom  so site speed is so fast than use javascript
+
+
+
 
 `refrest website`
 
