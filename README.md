@@ -4,8 +4,19 @@
 
 * [Node.js](https://github.com/SunnyIndustry/TIL/blob/main/React/node.js.md) 
 * [What is React](https://github.com/SunnyIndustry/TIL/blob/main/React/What%20is%20React%3F.md)
-* [JSX](https://github.com/SunnyIndustry/TIL/blob/main/React/jsx.md
-)
+* [JSX](https://github.com/SunnyIndustry/TIL/blob/main/React/jsx.md)
+* [Props](https://github.com/SunnyIndustry/TIL/blob/main/React/Props.md)
+* [State](https://github.com/SunnyIndustry/TIL/blob/main/React/State.md)
+* [useRef](https://github.com/SunnyIndustry/TIL/blob/main/React/Hooks.md)
+* [Hooks](https://github.com/SunnyIndustry/TIL/blob/main/React/State.md)
+* [Life cycle](https://github.com/SunnyIndustry/TIL/blob/main/React/Life%20cycle.md)
+* [useEffect](https://github.com/SunnyIndustry/TIL/blob/main/React/useEffect.md)
+* [useReducer](https://github.com/SunnyIndustry/TIL/blob/main/React/useReducer.md)
+
+
+
+
+
 
 
 
