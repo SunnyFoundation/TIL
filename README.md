@@ -12,6 +12,7 @@
 * [Life cycle](https://github.com/SunnyIndustry/TIL/blob/main/React/Life%20cycle.md)
 * [useEffect](https://github.com/SunnyIndustry/TIL/blob/main/React/useEffect.md)
 * [useReducer](https://github.com/SunnyIndustry/TIL/blob/main/React/useReducer.md)
+* [Context](https://github.com/SunnyIndustry/TIL/blob/main/React/Context.md)
 
 
 
