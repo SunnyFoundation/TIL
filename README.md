@@ -13,6 +13,8 @@
 * [useEffect](https://github.com/SunnyIndustry/TIL/blob/main/React/useEffect.md)
 * [useReducer](https://github.com/SunnyIndustry/TIL/blob/main/React/useReducer.md)
 * [Context](https://github.com/SunnyIndustry/TIL/blob/main/React/Context.md)
+* [Routing](https://github.com/SunnyIndustry/TIL/blob/main/React/Routing.md)
+
 
 
 
