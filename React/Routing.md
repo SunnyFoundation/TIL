@@ -33,3 +33,14 @@ npm i react-router-dom
 
 
 ```
+
+
+
+* `Link`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+```javascript
+      <Link to="/">Home</Link>
+
+
+
+```
