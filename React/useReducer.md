@@ -6,9 +6,8 @@
 * `useReducer`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 ```javascript
-  const initialState = { count: 0 };
+const [state, dispatch] = useReducer(reducer,0);
 
-  const [state, dispatch] = useReducer(reducer, initialState);
 
 ```
 
@@ -16,19 +15,16 @@
 * `Reducer`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 ```javascript
-// 💡 Receive respond and deal with it 
-
- const reducer = (state, action) => {
+function reducer(state, action) {
     switch (action.type) {
-      case 'increment':
-        return { count: state.count + 1 };
-      case 'decrement':
-        return { count: state.count - 1 };
-      default:
-        throw new Error();
+        case 'INCREMENT':
+            return state + action.payload;
+        case 'DECREMENT':
+            return state - action.payload;
+        default:
+            throw new Error();
     }
-  };
-
+}
 
 ```
 
@@ -38,10 +34,19 @@
 * `Dispatch`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 ```javascript
-// 💡send request
+  const onClickPlus = () => {
+    dispatch({
+        type: 'INCREMENT',
+        payload: 1,
+    });
+}
 
- <button onClick={() => dispatch({ type: 'increment' })}>Increment</button>
-      <button onClick={() => dispatch({ type: 'decrement' })}>Decrement</button>
 
+  return (
+    <div>
+        <button onClick={onClickPlus}>+</button>
+    </div>
+  )
+}
 
 ```
