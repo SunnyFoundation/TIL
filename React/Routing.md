@@ -44,3 +44,37 @@ npm i react-router-dom
 
 
 ```
+
+
+
+* `useNavigate`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+```javascript
+ const nav = useNavigate();
+
+
+ const onclickButton = () => {
+    nav('/new');
+  }
+
+
+```
+
+
+
+* ` URL Parameter `
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+```javascript
+ <Route path="/diary/:id" element={<Diary />} />
+
+    const params = useParams();  
+
+ return (
+    <div>{params.id}Diary </div>
+  )
+
+
+
+
+
+```
