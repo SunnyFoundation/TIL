@@ -65,6 +65,7 @@ npm i react-router-dom
 * ` URL Parameter `
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 ```javascript
+
  <Route path="/diary/:id" element={<Diary />} />
 
     const params = useParams();  
@@ -72,9 +73,5 @@ npm i react-router-dom
  return (
     <div>{params.id}Diary </div>
   )
-
-
-
-
 
 ```
