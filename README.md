@@ -17,7 +17,7 @@
 
 ## TypeScript
 
-* [What is TypeScript](https://github.com/SunnyIndustry/TIL/blob/main/React/What%20is%20React%3F.md)
+* [What is TypeScript](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/What%20is%20TypeScript.md)
 
 
 
