@@ -18,6 +18,7 @@
 ## TypeScript
 
 * [What is TypeScript](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/What%20is%20TypeScript.md)
+* [What is TypeScript](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Hello%20TypeScript.md)
 
 
 
