@@ -20,6 +20,11 @@
 * [What is TypeScript](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/What%20is%20TypeScript.md)
 * [Hello TypeScript](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Hello%20TypeScript.md)
 * [Primitive Type](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Primitive%20Type.md)
+* [Array,Tuple](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Array%20Tuple.md)
+* [Object](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Object.md)
+
+
+
 
 
 
