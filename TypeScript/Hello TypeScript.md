@@ -2,7 +2,9 @@
 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TypeScript requires @types/node to use Node.js's built-in modules.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; it serve Type of Node.js Built-in fuction 
+
+
 
 
 * `sudo npm install typescript -g `
