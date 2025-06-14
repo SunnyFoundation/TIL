@@ -22,6 +22,13 @@
 * [Primitive Type](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Primitive%20Type.md)
 * [Array,Tuple](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Array%20Tuple.md)
 * [Object](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Object.md)
+* [TypeAlias](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/TypeAlias.md)
+* [Index Signature](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Index%20Signature.md)
+* [Enum](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Enum.md)
+
+
+
+
 
 
 
