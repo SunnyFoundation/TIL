@@ -25,6 +25,10 @@
 * [TypeAlias](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/TypeAlias.md)
 * [Index Signature](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Index%20Signature.md)
 * [Enum](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Enum.md)
+* [any](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/any.md)
+* [Void , Never](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Void%20Never.md)
+
+
 
 
 
