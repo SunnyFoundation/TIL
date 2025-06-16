@@ -27,6 +27,15 @@
 * [Enum](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Enum.md)
 * [any](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/any.md)
 * [Void , Never](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Void%20Never.md)
+* [TypeCasting](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/TypeCasting.md)
+* [UnionType](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/UnionType.md)
+* [Type assertion](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/type%20assertion.md)
+* [Intersection](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Intersection%20Type.md)
+
+
+
+
+
 
 
 
