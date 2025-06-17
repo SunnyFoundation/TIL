@@ -31,6 +31,22 @@
 * [UnionType](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/UnionType.md)
 * [Type assertion](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/type%20assertion.md)
 * [Intersection](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Intersection%20Type.md)
+* [function type](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/function%20type.md)
+* [function type expression](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/function%20type%20expression.md)
+* [function call signature](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/function%20call%20signature.md)
+* [function overload](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/function%20overload.md)
+* [User-Defined Type Guard](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/User-Defined%20Type%20Guard.md)
+* [interface](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/interface%20.md)
+* [Generic function ](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Generic%20function.md)
+
+
+
+
+
+
+
+
+
 
 
 
