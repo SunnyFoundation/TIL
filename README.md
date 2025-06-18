@@ -38,6 +38,16 @@
 * [User-Defined Type Guard](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/User-Defined%20Type%20Guard.md)
 * [interface](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/interface%20.md)
 * [Generic function ](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Generic%20function.md)
+* [conditional types](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/conditional%20types.md)
+* [indexed access types](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/indexed%20access%20types.md)
+* [infer](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/infer.md)
+* [key of](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/key%20of%20.md)
+* [mapped](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/mapped.md)
+
+
+
+
+
 
 
 
