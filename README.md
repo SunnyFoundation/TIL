@@ -43,6 +43,24 @@
 * [infer](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/infer.md)
 * [key of](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/key%20of%20.md)
 * [mapped](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/mapped.md)
+* [partial](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/partial.md)
+* [required](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/required.md)
+* [readonly](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/readonly.md)
+* [Pick](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Pick.md)
+* [Omit](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Omit.md)
+* [Record](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Record.md)
+* [Exclude](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Exclude.md)
+* [Extract](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/Extract.md)
+* [ReturnType](https://github.com/SunnyIndustry/TIL/blob/main/TypeScript/ReturnType.md)
+
+
+
+
+
+
+
+
+
 
 
 
