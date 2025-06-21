@@ -57,6 +57,13 @@
 
 ## Next.js
 * [Pre-Rendering](https://github.com/SunnyIndustry/TIL/blob/main/Next.js/Pre-Rendering.md)
+* [Page Router](https://github.com/SunnyIndustry/TIL/blob/main/Next.js/Page%20Router.md)
+* [Query String](https://github.com/SunnyIndustry/TIL/blob/main/Next.js/Query%20String.md)
+* [API Route](https://github.com/SunnyIndustry/TIL/blob/main/Next.js/API%20Route.md)
+
+
+
+
 
 
 
