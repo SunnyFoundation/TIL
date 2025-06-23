@@ -61,6 +61,8 @@
 * [Query String](https://github.com/SunnyIndustry/TIL/blob/main/Next.js/Query%20String.md)
 * [API Route](https://github.com/SunnyIndustry/TIL/blob/main/Next.js/API%20Route.md)
 * [Send Props & children to Component](https://github.com/SunnyIndustry/TIL/blob/main/Next.js/Send%20Props%20%26%20Children%20to%20component.md)
+* [GetServerSideProps](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/getServerSideProps.md)
+
 
 
 
