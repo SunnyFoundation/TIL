@@ -62,6 +62,10 @@
 * [API Route](https://github.com/SunnyIndustry/TIL/blob/main/Next.js/API%20Route.md)
 * [Send Props & children to Component](https://github.com/SunnyIndustry/TIL/blob/main/Next.js/Send%20Props%20%26%20Children%20to%20component.md)
 * [GetServerSideProps (SSR)](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/getServerSideProps.md)
+* [GetStaticProps (SSR)](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/getStaticProps%20(SSG).md)
+* [GetStaticPaths (SSR)](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/getStaticPaths(SSG).md)
+
+
 
 
 
