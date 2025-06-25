@@ -64,6 +64,11 @@
 * [GetServerSideProps (SSR)](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/getServerSideProps.md)
 * [GetStaticProps (SSG)](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/getStaticProps%20(SSG).md)
 * [GetStaticPaths (SSG)](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/getStaticPaths(SSG).md)
+* [ISR](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/ISR.md)
+* [Deploy](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/Deploy.md)
+
+
+
 
 
 
