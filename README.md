@@ -70,7 +70,7 @@
 * [Params](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/Params.md)
 * [Layout](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/Layout.md)
 * [RouteGroup](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/RouteGroup.md)
-* [ServerComponent & ClientComponent](https://github.com/SunnyFoundation/TIL/tree/main/Next.js)
+* [ServerComponent & ClientComponent](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/ServerComponent%20%26%20ClientComponent.md)
 
 
 
