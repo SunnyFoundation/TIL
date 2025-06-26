@@ -71,6 +71,10 @@
 * [Layout](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/Layout.md)
 * [RouteGroup](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/RouteGroup.md)
 * [ServerComponent & ClientComponent](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/ServerComponent%20%26%20ClientComponent.md)
+* [DataFetch](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/DataFetch.md)
+
+
+
 
 
 
