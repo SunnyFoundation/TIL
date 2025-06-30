@@ -74,6 +74,9 @@
 * [DataFetch](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/DataFetch.md)
 * [DataCache](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/DataCache.md)
 * [FullRouterCache](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/FullRouterCache.md)
+* [Streaming](https://github.com/SunnyFoundation/TIL/blob/main/Next.js/Streaming.md)
+
+
 
 
 
