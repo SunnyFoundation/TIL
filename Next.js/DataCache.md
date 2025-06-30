@@ -2,6 +2,8 @@
 
 ⚡️ Your component will be cached 
 
+
+``` typescript
 async function RecoMovies() {
 
   const response = await fetch(
@@ -15,3 +17,4 @@ async function RecoMovies() {
   }
 
   const recoMovies: MovieData[] = await response.json();
+  '''
