@@ -85,6 +85,12 @@
 * [What Is SupaBase?](https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/What%20is%20SupaBase.md)
 * [Create Table & Connect Vscode](https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/CreateTable%20%26%20Connect%20Vscode.md)
 * [CRUD](https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/CRUD.md)
+* [Storage](https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/Storage.md)
+
+
+
+
+
 
 
 
