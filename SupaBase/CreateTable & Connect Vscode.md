@@ -16,14 +16,32 @@
 ## Connect Vscode 
 
 
-1. Make .env file  
-   <img width="419" alt="스크린샷 2025-07-05 오후 4 00 34" src="https://github.com/user-attachments/assets/9c1f3d92-7ca1-4166-86ca-798783aba5a7" />
-
+1. Make .env file
+ ```typescript
+ NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+NEXT_SUPABASE_SERVICE_ROLE=
+NEXT_SUPABASE_DB_PASSWORD=
+```
 
 2.  add "generate-types": in scripts file 
-   <img width="894" alt="스크린샷 2025-07-05 오후 4 04 59" src="https://github.com/user-attachments/assets/0a55b20c-4c25-4f96-9f64-f33f67cbf15d" />
+ ```typescript
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-types": "npx supabase gen types typescript --project-id garzzsiryphmrhqfgpgt --schema public > types_db.ts"
+  },
+```
+
+
+
+
+
 
 3. login supabase in the vscode
+
 ```bash
 npx supabase login
 ```
