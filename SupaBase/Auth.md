@@ -24,7 +24,57 @@
 <img width="1008" alt="스크린샷 2025-07-09 오후 7 00 35" src="https://github.com/user-attachments/assets/dae532a6-be1c-47ee-a011-5a3bb4fcd4ac" />
 
 
-##  1. check User's  login session
+
+##  1. Setting auth-provider.tsx
+ ```typescript
+
+"use client";
+
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { createBrowserSupabaseClient } from "utils/supabase/client";
+
+export default function AuthProvider({ accessToken, children }) {
+  const supabase = createBrowserSupabaseClient();
+  const router = useRouter();
+
+  useEffect(() => {
+    const {
+      data: { subscription: authListner },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      if (session?.access_token !== accessToken) {
+        router.refresh();
+      }
+    });
+
+    return () => {
+      authListner.unsubscribe();
+    };
+  }, [accessToken, supabase, router]);
+
+  return children;
+}
+```
+
+
+##  2. wrap authProvider into layout.tsx
+
+
+ ```typescript
+   return (
+    <html lang="en">
+      <body>
+    <AuthProvider accessToken={session?.access_token}>
+              {session?.user ? <MainLayout>{children}</MainLayout> : <Auth />}
+    </AuthProvider>
+    </body>
+    </html>
+  );
+
+
+```
+
+##  3. check User's  login session
 
 
  ```typescript
@@ -37,7 +87,7 @@
 
 
 
-##  2. Sign Up
+##  4. Sign Up
 
 
  ```typescript
@@ -51,7 +101,7 @@
 ```
 
 
-##  3. OTP Auth
+##  5. OTP Auth
 
 
  ```typescript
