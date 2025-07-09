@@ -86,7 +86,7 @@
 * [Create Table & Connect Vscode](https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/CreateTable%20%26%20Connect%20Vscode.md)
 * [CRUD](https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/CRUD.md)
 * [Storage](https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/Storage.md)
-* [Auth]([https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/Storage.md](https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/Auth.md)
+* [Auth](https://github.com/SunnyFoundation/TIL/blob/main/SupaBase/Auth.md)
 
 
 
