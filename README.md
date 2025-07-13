@@ -100,7 +100,7 @@
 * [git add .](https://github.com/SunnyFoundation/TIL/blob/main/Git/git%20add.md)
 * [git commit](https://github.com/SunnyFoundation/TIL/blob/main/Git/Git%20commit.md)
 * [Back to the Past](https://github.com/SunnyFoundation/TIL/blob/main/Git/Back%20to%20the%20Past.md)
-* [Branch](https://github.com/SunnyFoundation/TIL/blob/main/Git/branch.md)
+* [Branch](https://github.com/SunnyFoundation/TIL/blob/main/Git/Branch.md)
 
 
 
