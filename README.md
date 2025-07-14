@@ -101,6 +101,15 @@
 * [git commit](https://github.com/SunnyFoundation/TIL/blob/main/Git/Git%20commit.md)
 * [Back to the Past](https://github.com/SunnyFoundation/TIL/blob/main/Git/Back%20to%20the%20Past.md)
 * [Branch](https://github.com/SunnyFoundation/TIL/blob/main/Git/Branch.md)
+* [Three space of git](https://github.com/SunnyFoundation/TIL/blob/main/Git/Three%20space%20of%20git.md)
+* [Head](https://github.com/SunnyFoundation/TIL/blob/main/Git/Head.md)
+* [Stash](https://github.com/SunnyFoundation/TIL/blob/main/Git/Stash.md)
+* [bisect](https://github.com/SunnyFoundation/TIL/blob/main/Git/bisect.md)
+* [fetch vs pull](https://github.com/SunnyFoundation/TIL/blob/main/Git/fetch%20vs%20pull.md)
+
+
+
+
 
 
 
