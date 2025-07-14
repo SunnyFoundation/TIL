@@ -50,3 +50,25 @@ git switch board
 ```
 
 
+##  fetch branch from remote 
+
+
+```bash
+
+ 1. git fetch origin 
+ 2. git branch -a
+ 3. git switch -t origin/from-remote
+
+```
+
+
+
+##  make branch and push remote 
+
+
+```bash
+
+ 1. git branch from-local
+ 2. git push origin from-local 
+```
+
