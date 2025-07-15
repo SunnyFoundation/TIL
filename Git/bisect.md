@@ -10,7 +10,7 @@ git help you to found bug using Binary Search
 
 
 
-### 이진 탐색 시작
+### Binary Start
 
 
 ```bash
