@@ -21,7 +21,8 @@ git help you to found bug using Binary Search
 ```
 
 
-### 오류발생 지점임을 표시
+### Mark the Buggy Point
+
 
 
 
@@ -34,7 +35,8 @@ git bisect bad
 
 
 
-### 의심 지점으로 이동
+### Move to a Suspected Point
+
 
 
 
@@ -52,7 +54,7 @@ git checkout (해당 커밋 해시)
 
 
 
-### 오류 발생 않을 시 양호함 표시
+### Mark as Good if No Bug
 
 
 
@@ -69,7 +71,7 @@ git bisect good
 
 
 
-### 오류 발생시 
+### Mark as Bad if Bug Still There
 
 
 
@@ -86,7 +88,8 @@ git bisect bad
 
 
 
-### 이진 탐색 종료
+### End Binary Search
+
 
 
 
