@@ -119,12 +119,12 @@
 * [docker image ls ](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20image%20ls%20.md)
 * [docker create nginx](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20create%20nginx.md)
 * [docker start [container ID]](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20start%20%5Bcontainer%20ID%5D.md)
-* [docker run [image Name](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20run%20%5Bimage%20Name%5D.md)
-* [docker ps -a](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20ps%20-a.md)
-* [docker stop [Container ID](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20stop%20%5BContainer%20ID%5D.md)
-* [docker rm [Container ID](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20rm%20%5BContainer%20ID%5D.md)
+* [docker run [image Name]](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20run%20%5Bimage%20Name%5D.md)
+* [docker ps -a]](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20ps%20-a.md)
+* [docker stop [Container ID]](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20stop%20%5BContainer%20ID%5D.md)
+* [docker rm [Container ID]](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20rm%20%5BContainer%20ID%5D.md)
 * [Port Mapping](https://github.com/SunnyFoundation/TIL/blob/main/Docker/Port%20Mapping.md)
-* [docker exec -it [Container ID bash ](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20exec%20-it%20%5BContainer%20ID%5D%20bash%20.md)
+* [docker exec -it [Container ID bash ]](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20exec%20-it%20%5BContainer%20ID%5D%20bash%20.md)
 
 
 
