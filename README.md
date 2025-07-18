@@ -125,7 +125,7 @@
 * [docker rm [Container ID]](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20rm%20%5BContainer%20ID%5D.md)
 * [Port Mapping](https://github.com/SunnyFoundation/TIL/blob/main/Docker/Port%20Mapping.md)
 * [docker exec -it [Container ID bash ]](https://github.com/SunnyFoundation/TIL/blob/main/Docker/docker%20exec%20-it%20%5BContainer%20ID%5D%20bash%20.md)
-* [DockerFile](https://github.com/SunnyFoundation/TIL/blob/main/Docker/DockerFile.md)
+* [DockerFile](https://github.com/SunnyFoundation/TIL/blob/main/Docker/Dockerfile.md)
 * [COPY](https://github.com/SunnyFoundation/TIL/blob/main/Docker/COPY.md)
 * [RUN](https://github.com/SunnyFoundation/TIL/blob/main/Docker/RUN.md)
 * [WORKDIR](https://github.com/SunnyFoundation/TIL/blob/main/Docker/WORKDIR.md)
