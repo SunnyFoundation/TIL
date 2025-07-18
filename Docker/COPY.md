@@ -1,7 +1,7 @@
 # COPY
 
 
-##it can copy from your host folder directory 
+## ⚡️it can copy from your host folder directory 
 
 
 ```dockerfile
