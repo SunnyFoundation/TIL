@@ -138,7 +138,18 @@ export async function getAllmessages({
 
 ```
 
+##  3. SubScribe 
 
+⚡️ If you subscribe your database table and then change data of your table for example insert  , or update then code will notice you 
 
- 
+  ```typescript
+   const  waitingChannel = supabase.channel('waiting_users_changes')
+    .on('postgres_changes', {
+      event: 'INSERT',
+      schema: 'public',
+      table: 'waiting_users'
+    }, async payload => {
+        // when table will be changed and then you get the notice 
+    }
+```
 
