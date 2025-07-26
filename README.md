@@ -1,18 +1,14 @@
-# Today I Learned(TIL) Wiki
-
 # BlockChain
 
-  ### Fundemental
-   * [What is BlockChain?]() 
-
-    
-
+  ## 📖 Fundemental
+   * [Byzantine Generals Problem](https://github.com/SunnyFoundation/TIL/blob/main/BlockChain/Fundamental/Byzantine%20Generals%20Problem.md) 
+   * [Public Key | Private Key](https://github.com/SunnyFoundation/TIL/blob/main/BlockChain/Fundamental/Public%20Key%20%7C%20Private%20Key%20%7C.md) 
 
 
-
-
-
-
+## 🌏 Ecosystem
+ 
+### Ethereum 
+   * [SmartContract](https://github.com/SunnyFoundation/TIL/blob/main/BlockChain/Etherium/SmartContract.md) 
 
 
 
