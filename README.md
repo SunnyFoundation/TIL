@@ -19,6 +19,10 @@
 
 ###  Bitcoin 
    * [Abstact](https://github.com/SunnyFoundation/TIL/blob/main/BlockChain/Bitcoin/Abstact.md) 
+   * [Caculations](https://github.com/SunnyFoundation/TIL/blob/main/BlockChain/Bitcoin/Caculations.md) 
+
+
+
 
  
 ### Ethereum 
