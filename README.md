@@ -27,7 +27,7 @@
  
 ### Ethereum 
    * [SmartContract](https://github.com/SunnyFoundation/TIL/blob/main/BlockChain/Etherium/SmartContract.md) 
-   * [Solidity](https://github.com/SunnyFoundation/TIL/blob/main/BlockChain/Etherium/SmartContract.md) 
+   * [Solidity](https://github.com/SunnyFoundation/TIL/tree/main/Solidity) 
 
 
 
