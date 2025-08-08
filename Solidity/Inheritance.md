@@ -2,11 +2,12 @@
 
 
 ⚡️ it allows child contract can use all of variable , function from parent funciton 
-  * one Inheritance
-  * two Inheritance
+  *  Inheritance
+  *  Multiple Inheritance
+  *  super
 
 
-## one Inheritance
+##  Inheritance
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
 
@@ -52,7 +53,7 @@ contract Son is Father("SUN") {
 ```
 
 
-## two Inheritance
+## Multiple Inheritance
 ```solidity
 contract Father {
     uint256 fatherMoney = 100;
@@ -88,6 +89,56 @@ contract Son is Father,Mother {
  
 }
 ```
+
+
+##  super
+⚡️ You can avoid the hassle of inheriting multiple lines of code by using the super keyword.
+
+
+
+```solidity
+
+    
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.8.2 <0.9.0;
+
+/**
+ * @title Storage
+ * @dev Store & retrieve value in a variable
+ * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
+ */
+
+
+contract Father {
+    event FatherName(string name);
+
+    function who() public virtual {
+        emit FatherName("KIM-KI-EUN");
+    }
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+contract Son is Father {
+    event SonName(string name);
+
+    function who() public override {
+        super.who(); // Father의 who 호출
+        emit SonName("Sunny"); // Son의 이벤트 발행
+    }
+}
+```
+
 
 
 
