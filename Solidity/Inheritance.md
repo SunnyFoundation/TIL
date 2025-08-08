@@ -2,9 +2,11 @@
 
 
 ⚡️ it allows child contract can use all of variable , function from parent funciton 
+  * one Inheritance
+  * two Inheritance
 
 
-
+## one Inheritance
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
 
@@ -48,3 +50,45 @@ contract Son is Father("SUN") {
  
 }
 ```
+
+
+## two Inheritance
+```solidity
+contract Father {
+    uint256 fatherMoney = 100;
+
+
+   function getMoney() public virtual  view returns (uint256) {
+      return fatherMoney;
+   }
+
+   
+    
+}
+
+contract Mother {
+    uint256 motherMoney = 300;
+
+
+   function getMoney() public virtual  view returns (uint256) {
+      return motherMoney;
+   }
+    
+}
+
+
+
+contract Son is Father,Mother {
+
+   
+    function getMoney() public override(Father,Mother)  view returns (uint256) {
+      return fatherMoney + motherMoney;
+   }
+
+ 
+}
+```
+
+
+
+
