@@ -13,6 +13,11 @@
 Randome Point G * your private key  in Elliptic Curve you can take Public Key
 The Key is  k*G = P is super easy But  ? * G = P  How to get " ? " ?   that is super difficult
 This is ECC 
+
+ECC는 타원곡선의 점 덧셈 연산을 기반으로 한 공개키 암호 방식이다
+kG = P 꼴의 문제에서 k를 구하기 어려운 성질(이산로그문제)를 이용한다. 
+이 성질 덕분에 서명(ECDSA)을 안전하게 생성하고 검증할수있다.
+
 ```
 
 
