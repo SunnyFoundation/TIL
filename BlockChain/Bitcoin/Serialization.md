@@ -1,3 +1,9 @@
 # Serialization
+⚡️ turn object into byteStream
 
-⚡️  change object into ByteStream
+* SEC
+* compression
+* non compression
+* parse public key 
+
+
