@@ -2,8 +2,12 @@
 ⚡️ turn object into byteStream
 
 * SEC
-* compression
 * non compression
-* parse public key 
+* compression
+* parse public key
+* DER
+* BASE58
+* Get a Testnet Address
+* Get a Mainnet Address
 
 
