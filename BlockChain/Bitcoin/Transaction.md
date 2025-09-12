@@ -1,8 +1,7 @@
 # Transaction
-⚡️ A record that consumes previously received UTXOs as inputs and creates new UTXOs as outputs to transfer ownership
+⚡️ transaction records that contain input output verify 
+
 * version
 * input
 * output
-* parse script
-* serializatuon script
-* combination script
+* LockTime
