@@ -5,3 +5,18 @@
 * input
 * output
 * LockTime
+
+
+# version
+Literally transaction version like window
+
+
+# input
+reference previous outputs and contain kinds of n output , script_sig
+
+
+# output 
+amount , lock_script
+
+# LockTime
+when time transaction into Block 
