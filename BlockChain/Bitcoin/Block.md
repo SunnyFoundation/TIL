@@ -24,3 +24,11 @@
 		TimeStamp
 		Bit Value
 		Nonce
+
+
+    proof of work
+    	How to create Hash Value of Miner
+    	bits_to_target
+	    difficulty
+	    check_pow
+	    calculate_new_bits
