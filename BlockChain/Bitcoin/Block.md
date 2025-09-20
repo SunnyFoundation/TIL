@@ -27,8 +27,10 @@
 
 
     proof of work
-    	How to create Hash Value of Miner
-    	bits_to_target
-	    difficulty
-	    check_pow
-	    calculate_new_bits
+	   How to create Hash Value of Miner
+	   bits_to_target
+	   target_to_bits
+	   difficulty
+	   check_pow
+	   calculate_new_bits
+
