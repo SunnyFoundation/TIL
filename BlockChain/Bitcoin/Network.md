@@ -1,20 +1,12 @@
 # network
 
+* Networking
+	* Network Header
+	* Network body
+	* __init__
+	* parse
+	* serialize
+	* Network HandShake
+	* Request / Response Block Header
 
 
-	Network Header
-		network magic
-		command
-		payload length
-		payload checksum
-	Network body
-		payload
-		version
-		verack
-		ping
-		tx
-		block
-		inv
-	__init__
-	parse
-	serialize
