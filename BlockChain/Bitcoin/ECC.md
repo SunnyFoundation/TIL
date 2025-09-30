@@ -1,9 +1,6 @@
 # 🔐 Elliptic Curve Cryptography
 * 1️⃣ Definition
-* 2️⃣ Definition FieldElement in Elliptic Curve
-* 3️⃣ Point Addition FieldElement in Elliptic Curve
-* 4️⃣ scalar product
-* 5️⃣ Secp256k1
+* 2️⃣ Scala Multiple
 * 6️⃣ S256Field
 * 7️⃣ S256Point
 * 8️⃣ Create Signature
@@ -14,7 +11,7 @@
 
 
 
-## Introduction
+## Definition
 ```
 Randome Point G * your private key  in Elliptic Curve you can take Public Key
 The Key is  k*G = P is super easy But  ? * G = P  How to get " ? " ?   that is super difficult
@@ -25,6 +22,67 @@ kG = P 꼴의 문제에서 k를 구하기 어려운 성질(이산로그문제)�
 이 성질 덕분에 서명(ECDSA)을 안전하게 생성하고 검증할수있다.
 
 ```
+
+## Scala Multiple
+```python
+
+prime = 223
+x = FieldElement(15,prime)
+y = FieldElement(86,prime)
+a = FieldElement(0,prime)
+b = FieldElement(7,prime)
+p1 = Point(x,y,a,b)
+p2 = Point(x,y,a,b)
+print(7*p1) //  infinity 
+
+
+class Point:
+
+  def __rmul__(self,coefficient):
+     coef = coefficient
+     current = self
+     result = self.__class__(None,None,self.a,self,b)
+     while coef:
+       if coef & 1 :
+         result += current
+       current += current
+       coef >>= 1
+     return result
+
+
+ def __add__(self,other):
+    if self == other:
+      s = ( 3 * self.x ** 2 + self.a) / (2 * self.y)
+      x = s**2  - 2 * self.x
+      y = s * (self.x - x ) - self.y
+      return self.__class__(x,y,self.a,self.b)
+
+
+
+class FieldElement:
+
+  def __rmul__(self,coefficient):
+     num = (self.num * cofficient) % self.prime
+     return self.__class__(num = num , prime=self.prime)
+
+
+
+
+```
+
+
+
+
+## Create Signature
+```python
+
+from FieldElement import FieldElement
+from Point import Point
+from secp256k1 import S256Point
+from helper import hash256
+from random import randint
+
+
 
 
 
