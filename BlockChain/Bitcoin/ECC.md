@@ -1,10 +1,15 @@
 # 🔐 Elliptic Curve Cryptography
-* 1️⃣ Definition
-* 2️⃣ Scala Multiple
-* 6️⃣ S256Field
-* 7️⃣ S256Point
-* 8️⃣ Create Signature
-* 9️⃣ Verify Signature
+*  Definition
+*  A
+*  B
+*  P
+*  N
+*  G
+*  S256Field
+*  S256Point
+*  Signature
+*  Privatekey
+*  Excute Code
 
 
 
@@ -23,212 +28,185 @@ kG = P 꼴의 문제에서 k를 구하기 어려운 성질(이산로그문제)�
 
 ```
 
-## Scala Multiple
+## A
 ```python
 
-prime = 223
-x = FieldElement(15,prime)
-y = FieldElement(86,prime)
-a = FieldElement(0,prime)
-b = FieldElement(7,prime)
-p1 = Point(x,y,a,b)
-p2 = Point(x,y,a,b)
-print(7*p1) //  infinity 
-
-
-class Point:
-
-  def __rmul__(self,coefficient):
-     coef = coefficient
-     current = self
-     result = self.__class__(None,None,self.a,self,b)
-     while coef:
-       if coef & 1 :
-         result += current
-       current += current
-       coef >>= 1
-     return result
-
-
- def __add__(self,other):
-    if self == other:
-      s = ( 3 * self.x ** 2 + self.a) / (2 * self.y)
-      x = s**2  - 2 * self.x
-      y = s * (self.x - x ) - self.y
-      return self.__class__(x,y,self.a,self.b)
-
-
-
-class FieldElement:
-
-  def __rmul__(self,coefficient):
-     num = (self.num * cofficient) % self.prime
-     return self.__class__(num = num , prime=self.prime)
-
-
-
-
-```
-
-
-
-
-## Create Signature
-```python
-
-from FieldElement import FieldElement
-from Point import Point
-from secp256k1 import S256Point
-from helper import hash256
-from random import randint
-
-
-
-
-
-
-## Create Signature
-```python
-
-from FieldElement import FieldElement
-from Point import Point
-from secp256k1 import S256Point
-from helper import hash256
-from random import randint
-
-
-
-
- # Special Point In Secp256K1
-G = S256Point(0x79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798,0x483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8)
- # order
-N = 0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141
-
-
-# Private_key
-e = int.from_bytes(hash256(b'my secret'), 'big') 
-
-
-
-#  Hassing Message 
-z = int.from_bytes(hash256(b'my message'), 'big')  
-
-
-
-
-class Signature:
-
-
-    def __init__(self,r,s):
-        self.r = r
-        self.s = s
-
-
-    def __repr__(self):
-        return "Signature({:x},{:x}).".format(self.r,self.s)
-       
-        
-
-class PrivateKey:
-
-
-    def __init__(self, secret):
-
-        #  개인 키
-        self.secret = secret
-
-        #  공개 키
-        self.point = secret * G #1
-
-
-    # 개인키를 16진수로 변환 
-    def hex(self):
-        return '{:x}'.format(self.secret).zfill(64)
-    
-    # 메시지 해시 z 를 받아서 서명함 
-    def sign(self, z):
-        # 랜덤값 생성
-        k = randint(0, N) 
-        
-        # r 값 생성
-        r = (k * G).x.num
-        
-        # k 역원 구하기 
-        k_inv = pow(k, N-2, N) #3
-        
-        # 서명 값 구하기 
-        s = (z + r * self.secret) * k_inv % N
-        
-        if s > N/2: #4
-            s = N - s
-            
-        # 서명 값 리턴 
-        return Signature(r, s)
-    
-
-
-private_key = PrivateKey(e)  # PrivateKey 객체 생성
-signature = private_key.sign(z)  # sign() 호출 → Signature 객체 리턴
-
-
-print(signature)  # Signature.__repr__ 덕분에 r,s 값 예쁘게 출력
-
-```
-
-
-
-
-
-## Verify Signature
-```python
-
-from FieldElement import FieldElement
-from Point import Point
-
-
-
-P = 2**256 - 2**32 - 977
+  
 A = 0
+
+```
+
+
+
+
+## B
+```python
 B = 7
+
+
+
+
+```
+
+
+## P
+```python
+P = 2**256 - 2**32 - 977
+
+
+
+
+```
+
+
+## N 
+```python
 N = 0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141
 
+```
 
-class S256Field(FieldElement):
-	def __init__(self, num, prime=None):
-		super().__init__(num=num, prime=P)
-	
-	def __repr__(self):
-		return '{:x}'.format(self.num).zfill(64)
-	
-
-class S256Point(Point):
-	
-	def __init__(self, x, y, a=None, b=None):
-		a, b = S256Field(A), S256Field(B)
-		if type(x) == int :
-			super().__init__(x=S256Field(x),y=S256Field(y),a=a,b=b)
-		else :
-			super().__init__(x=x,y=y,a=a,b=b)
-	def __rmul__(self,coefficient):
-		coef = coefficient % N
-		return super().__rmul__(coef)
-	
-	def verify(self, z, sig):
-		
-		s_inv = pow(sig.s, N-2, N)
-		u = z * s_inv % N
-		v = sig.r * s_inv % N
-		total = u * G + v * self
-		return total.x.num == sig.r
-		
-	
-
-	
-		
+## G
+```python
 G = S256Point(
     0x79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798,
     0x483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8
 )
+
+```
+
+
+## S256Field
+```python
+
+class S256Field(FieldElement):
+
+    def __init__(self, num, prime=None):
+        super().__init__(num=num, prime=P)
+
+    def __repr__(self):
+        return '{:x}'.format(self.num).zfill(64)
+
+```
+
+
+## S256Point
+```python
+
+
+class S256Point(Point):
+
+    def __init__(self, x, y, a=None, b=None):
+        a, b = S256Field(A), S256Field(B)
+        if type(x) == int:
+            super().__init__(x=S256Field(x), y=S256Field(y), a=a, b=b)
+        else:
+            super().__init__(x=x, y=y, a=a, b=b)  
+
+    def __repr__(self):
+        if self.x is None:
+            return 'S256Point(infinity)'
+        else:
+            return 'S256Point({}, {})'.format(self.x, self.y)
+
+    # tag::source8[]
+    def __rmul__(self, coefficient):
+        coef = coefficient % N  # <1>
+        return super().__rmul__(coef)
+    
+    def verify(self, z, sig):
+        s_inv = pow(sig.s, N - 2, N)  # <1>
+        u = z * s_inv % N  # <2>
+        v = sig.r * s_inv % N  # <3>
+        total = u * G + v * self  # <4>
+        return total.x.num == sig.r  # <5>
+    
+```
+
+
+## Signature
+```python
+
+
+class Signature:
+
+    def __init__(self, r, s):
+        self.r = r
+        self.s = s
+
+    def __repr__(self):
+        return 'Signature({:x},{:x})'.format(self.r, self.s)
+    
+
+    
+```
+
+## Privatekey
+```python
+
+
+
+class PrivateKey:
+
+    def __init__(self, secret):
+        self.secret = secret
+        self.point = secret * G  # <1>
+
+    def hex(self):
+        return '{:x}'.format(self.secret).zfill(64)
+    # end::source13[]
+
+    # tag::source14[]
+    def sign(self, z):
+        k = self.deterministic_k(z)  # <1>
+        r = (k * G).x.num
+        k_inv = pow(k, N - 2, N)
+        s = (z + r * self.secret) * k_inv % N
+        if s > N / 2:
+            s = N - s
+        return Signature(r, s)
+    
+
+    def deterministic_k(self, z):
+        k = b'\x00' * 32
+        v = b'\x01' * 32
+        if z > N:
+            z -= N
+        z_bytes = z.to_bytes(32, 'big')
+        secret_bytes = self.secret.to_bytes(32, 'big')
+        s256 = hashlib.sha256
+        k = hmac.new(k, v + b'\x00' + secret_bytes + z_bytes, s256).digest()
+        v = hmac.new(k, v, s256).digest()
+        k = hmac.new(k, v + b'\x01' + secret_bytes + z_bytes, s256).digest()
+        v = hmac.new(k, v, s256).digest()
+        while True:
+            v = hmac.new(k, v, s256).digest()
+            candidate = int.from_bytes(v, 'big')
+            if candidate >= 1 and candidate < N:
+                return candidate  # <2>
+            k = hmac.new(k, v + b'\x00', s256).digest()
+            v = hmac.new(k, v, s256).digest()
+
+    
+```
+
+
+
+
+
+
+
+
+## Excute Code
+```python
+
+pk = PrivateKey(randint(0, N))
+
+private_key = pk.secret
+publick_key = pk.point
+z = randint(0, 2**256)
+sig = pk.sign(z)
+print(sig)
+print(pk.point.verify(z,sig))
 
 
 ```
