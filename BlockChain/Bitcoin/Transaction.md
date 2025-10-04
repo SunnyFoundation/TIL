@@ -5,6 +5,8 @@
 * input
 * output
 * LockTime
+* create
+* verify 
 
 
 # version
