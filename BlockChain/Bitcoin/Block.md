@@ -1,36 +1,122 @@
 # Block
-	Abstract
- 
-	CoinBase Transaction
-		Structure
-		is_coinbase
-		First UnLock_Script
-		BIP 0034
-		coinbase_height
-
-  
-	Block Header
-		Structure
-		__init__
-		parse
-		serialize
-		hash
-		Block verison
-		bip 9
-		bip 91
-		bip 141
-		Previous block hash value
-		Merkle root
-		TimeStamp
-		Bit Value
-		Nonce
+  ⚡️ List of Transctions that have 80 byes 
 
 
-    proof of work
-	   How to create Hash Value of Miner
-	   bits_to_target
-	   target_to_bits
-	   difficulty
-	   check_pow
-	   calculate_new_bits
+## __init__
+```python
+
+       def __init__(self, version, prev_block, merkle_root, timestamp, bits, nonce):
+        self.version = version
+        self.prev_block = prev_block
+        self.merkle_root = merkle_root
+        self.timestamp = timestamp
+        self.bits = bits
+        self.nonce = nonce
+```
+
+
+## parse
+```python
+
+    
+    @classmethod
+    def parse(cls, s):
+        version = little_endian_to_int(s.read(4))
+        prev_block = s.read(32)[::-1]  # network에서 읽을 때 big→little 변환
+        merkle_root = s.read(32)[::-1]
+        timestamp = little_endian_to_int(s.read(4))
+        bits = s.read(4)
+        nonce = s.read(4)
+        return cls(version, prev_block, merkle_root, timestamp, bits, nonce)
+```
+
+
+
+## serialize
+```python
+
+
+    def serialize(self):
+        version_bytes = int_to_little_endian(self.version, 4)
+        prev_block_bytes = self.prev_block[::-1]  # little→big 복원
+        merkle_root_bytes = self.merkle_root[::-1]
+        timestamp_bytes = int_to_little_endian(self.timestamp, 4)
+        bits_bytes = self.bits
+        nonce_bytes = self.nonce
+        return (
+            version_bytes
+            + prev_block_bytes
+            + merkle_root_bytes
+            + timestamp_bytes
+            + bits_bytes
+            + nonce_bytes
+        )
+```
+
+
+## hash
+```python
+    def hash(self):
+        s = self.serialize()
+        sha = hash256(s)
+        return sha[::-1]
+```
+
+## bip
+```python
+    def bip9(self):
+        return self.version >> 29 == 0b001
+
+    def bip91(self):
+        return self.version >> 4 & 1 == 1
+
+    def bip141(self):
+        return self.version >> 1 & 1 == 1
+```
+
+
+
+## target
+```python
+      def target(self):
+        return bits_to_target(self.bits)
+
+```
+
+## difficulty
+```python
+   def difficulty(self):
+        lowest = 0xFFFF * 256 ** (0x1D - 3)
+        return lowest / self.target()
+
+
+```
+
+
+## check_pow
+```python
+    def check_pow(self):
+        proof = self.hash()
+        target_value = self.target().to_bytes(32, "big")
+        return proof < target_value
+
+```
+
+
+## calculate_new_bits
+```python
+  @staticmethod
+    def calculate_new_bits(previous_bits, time_differential):
+        if (
+            time_differential > TWO_WEEKS * 4
+        ):  # 시간차이가 8주보다 크다면 그냥 8주로 박음
+            time_differential = TWO_WEEKS * 4
+        if (
+            time_differential < TWO_WEEKS // 4
+        ):  # 시간차이가 3.5일보다 작으면 그냥 그냥 3.5일로 박음
+            time_differential = TWO_WEEKS // 4
+        new_target = bits_to_target(previous_bits) * time_differential // TWO_WEEKS
+        return target_to_bits(new_target)
+
+```
 
