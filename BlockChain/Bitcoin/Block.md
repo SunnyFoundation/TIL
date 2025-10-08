@@ -120,3 +120,32 @@
 
 ```
 
+
+## mine
+``` python
+     def mine(self, start_nonce=0, max_nonce=0xFFFFFFFF):
+        """
+        채굴 시도 함수.
+        nonce를 0부터 하나씩 증가시키며 check_pow()가 True가 될 때까지 반복.
+        """
+        target = self.target()
+        print(f"Mining... target = {hex(target)}")
+
+        start_time = time.time()
+        for nonce in range(start_nonce, max_nonce):
+            self.nonce = int_to_little_endian(nonce, 4)
+            hash_value = hash256(self.serialize())
+            # 비교 시 little-endian → big-endian으로 뒤집기
+            if hash_value[::-1] < target.to_bytes(32, "big"):
+                elapsed = time.time() - start_time
+                print(f"✅ Found! Nonce = {nonce}, Hash = {hash_value[::-1].hex()}")
+                print(f"Elapsed: {elapsed:.2f} sec")
+                return nonce
+            if nonce % 1000000 == 0:
+                print(f"Checked nonce {nonce}... still mining")
+
+        print("❌ No valid nonce found in range.")
+        return None
+
+```
+
