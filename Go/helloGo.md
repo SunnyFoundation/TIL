@@ -10,3 +10,10 @@ func main() {
 }
 
 ```
+
+
+
+
+```
+ go run hello.go
+```
